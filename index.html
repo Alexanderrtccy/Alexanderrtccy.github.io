@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="novfinish.css">
+    <title>finish</title>
+</head>
+<body>
+    
+    <div id="startdisplay">
+        <div id="container_button">
+        <div id="newplay" onclick="startgame()" class="button"> Новая игра
+        </div>
+        <div class="button"> Правила</div>
+    </div></div>
+    <div id="teams">
+        <div class="teamup">
+             <p> Команды</p>
+             
+        </div>
+        <div id="main">
+            <img id="plus" src="pngwing.com (9).png" onclick="newteam()">
+            <div id="nameteam">
+                <p class="text"></p>
+                <p class="text"></p>
+                <p class="text"></p>
+            </div>
+        </div>
+        <div id="next" class="teamup"        onclick="ttime()">
+            Далее
+        </div>
+    </div>
+    <div id="time">
+        <div class="teamup">
+            <p> Время раунда</p>
+            
+       </div>
+       <div id="main">
+       <img id="plus" src="pngwing.com (9).png" onclick="moretime()">
+       <p id="text_time">10</p></div>
+       <div id="secondnext" class="teamup" onclick="play()">
+       <p>Начать игру</p> 
+    </div>
+    </div>
+    <div id="play_game">
+        <div class="teamup"><p id="text_words">0</p>
+        </div>
+        <div id="word"></div>
+        <div id="container_but_play">
+            <button id="accept" onclick="accept()">отгадано </button>
+            <button id="redjected" onclick="redjected()">пропущено</button>
+            
+        </div>
+        <div  class="teamup">
+            <p id="timer"></p> 
+         </div>
+
+    </div>
+    
+    
+    <script src="novfinish.js"> </script>
+</body>
+</html>
